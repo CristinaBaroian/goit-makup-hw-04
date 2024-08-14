@@ -208,11 +208,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .hero-section{
-background: url("../images/people-office.jpg") #2e2f42b3;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-padding: 188px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    max-width: 1440px;
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .hero-container{
@@ -252,14 +254,15 @@ padding: 188px 0;
             margin-top: 356px;
             margin-bottom: 188px;
             margin-left: 635px;
-            margin-right:635px
+            margin-right:635px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .primary-button:hover, 
 .primary-button:focus{
     background-color:var(--ocean);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .advantages-section{
     background-color:var(--white);
